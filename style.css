@@ -1,12 +1,7 @@
 * {
   box-sizing: border-box;
-  font-family: sans-serif;
-  --color-gray-100: hsl(270deg 25% 96%);
-  --color-gray-300: hsl(270deg 17% 84%);
-  --color-gray-500: hsl(270deg 17% 72%);
-  --color-gray-700: hsl(270deg 12% 58%);
-  --color-gray-900: hsl(270deg 22% 12%);
-  --color-gray-1000: hsl(270deg 20% 8%);
+  font-family: 'Raleway', sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
 html,
@@ -14,6 +9,12 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
+  --color-gray-100: hsl(270deg 25% 96%);
+  --color-gray-300: hsl(270, 17%, 84%);
+  --color-gray-500: hsl(270deg 17% 72%);
+  --color-gray-700: hsl(270deg 12% 58%);
+  --color-gray-900: hsl(270deg 22% 12%);
+  --color-gray-1000: hsl(270deg 20% 8%);
 }
 
 .wrapper {
@@ -42,11 +43,27 @@ footer {
 
 .logo {
   font-size: 2rem;
+  font-weight: 900;
   margin-bottom: 16px;
+  line-height: 38px;
+}
+
+.sublogo {
+  color: var(--color-gray-500);
+  font-style: italic;
+  font-weight: 500;
+  line-height: 19px;
+}
+
+.person-name {
+  color: var(--color-gray-300);
+  font-weight: 700;
 }
 
 .legal {
   margin-top: auto;
+  color: var(--color-gray-700);
+  font-weight: 400;
 }
 
 .links {
@@ -58,6 +75,9 @@ footer {
   margin-bottom: 24px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  color: var(--color-gray-700);
+  font-weight: 700;
+  line-height: 19px;
 }
 
 .links li {
@@ -70,6 +90,8 @@ footer {
 
 .links a {
   text-decoration: none;
+  color: var(--color-gray-100);
+  font-weight: 500;
 }
 
 main {
